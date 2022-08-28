@@ -1,6 +1,8 @@
 name: CI
 
-on: [push]
+on: 
+  # 手动触发事件
+  workflow_dispatch:
 
 jobs:
   build:
