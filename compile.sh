@@ -5,5 +5,5 @@
  tar -xvf openwrt-imagebuilder-${version}-ramips-mt7620.Linux-x86_64.tar
  cd openwrt-imagebuilder-${version}-ramips-mt7620.Linux-x86_64
  make info
- make image PROFILE=phicomm_psg1218a PACKAGES="uhttpd uhttpd-mod-ubus libiwinfo-lua luci-base luci-mod-admin-full luci-theme-bootstrap wpad-openssl luci-i18n-base-zh-cn luci-i18n-firewall-zh-cn curl bash pdnsd-alt dnscrypt-proxy libmbedtls ipset ip iptables luci wget-ssl unzip ca-certificates iptables-mod-tproxy coreutils coreutils-base64  luci-compat -wpad-basic-wolfssl -ip6tables -odhcp6c -kmod-ipv6 -kmod-ip6tables -odhcpd-ipv6only" CONFIG_IPV6=n
+ make image PROFILE=phicomm_psg1218a PACKAGES="uhttpd uhttpd-mod-ubus libiwinfo-lua luci-base luci-mod-admin-full luci-theme-bootstrap wpad-openssl luci-i18n-base-zh-cn luci-i18n-firewall-zh-cn wget-ssl bash ca-certificates pdnsd-alt curl dnscrypt-proxy coreutils coreutils-base64 luci-compat  -wpad-basic-wolfssl -ip6tables -odhcp6c -kmod-ipv6 -kmod-ip6tables -odhcpd-ipv6only" CONFIG_IPV6=n
  #make image PROFILE=lenovo_newifi-y1s PACKAGES="uhttpd uhttpd-mod-ubus libiwinfo-lua luci-base luci-app-firewall luci-proto-ppp luci-mod-admin-full luci-theme-bootstrap wpad-openssl luci-app-ddns luci-proto-wireguard  luci-app-wireguard curl -wpad-basic-wolfssl -ip6tables -odhcp6c -kmod-ipv6 -kmod-ip6tables -odhcpd-ipv6only" CONFIG_IPV6=n
